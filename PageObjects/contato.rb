@@ -31,10 +31,6 @@ class MakeContact
         find('#comp-kwz6tqhd > button').click
     end
 
-    def recaptcha_click
-        find(:xpath, '//*[@id="recaptcha-anchor"]', visible: false).click
-    end
-
     def send_name
         fill_in 'input_comp-kwz6tqej', with: @nome
     end
@@ -50,7 +46,5 @@ class MakeContact
     def send_message
         fill_in 'textarea_comp-kwz6tqfr', with: @mensagem 
     end
-
-
 end
 
